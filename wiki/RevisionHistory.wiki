@@ -1,0 +1,9 @@
+#labels Phase-Design
+===0.25===
+  * Initial release
+
+===0.30===
+  * Added 3 preferences:
+  * Enable/disable (without restarting FF)
+  * Do not prompt for rule generation (only alert when HTTPS is available)
+  * Auto-forward to HTTPS when available ("Silent mode") 
