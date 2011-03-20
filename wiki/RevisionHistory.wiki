@@ -1,9 +1,13 @@
 #labels Phase-Design
-===0.25===
-  * Initial release
+===0.31===
+  * Fixes  Issue 4 : Top level/subdomain compatibility for auto-generated rules. HTTPS Everywhere rule creation should now work for all top level domains. Tested with two, three, and four letter TLDs as well as complex cases such as co.uk, com.au, etc. 
+  * Improved recognition of bad SSL certificates. 
 
 ===0.30===
   * Added 3 preferences:
   * Enable/disable (without restarting FF)
   * Do not prompt for rule generation (only alert when HTTPS is available)
   * Auto-forward to HTTPS when available ("Silent mode") 
+
+===0.25===
+  * Initial release
