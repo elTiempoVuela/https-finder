@@ -1,6 +1,6 @@
 #labels Phase-Design
 ===0.32 (unreleased)===
-  * Changed SSL detection to use a HEAD request rather than GET (should reduce bandwidth use, noticeably quicker detection in practice).  If HEAD fails (It fails on Amazon.de and .co.uk for instance, it falls back to a GET request.)
+  * Changed SSL detection to use a HEAD request rather than GET (should reduce bandwidth use, noticeably quicker detection in practice).  If HEAD fails with response code 405 (Amazon.de and a few other sites do this, it falls back to a GET request.)
 
   * Implementing whitelist ([http://i.imgur.com/Xxtfy.png Preview])
 
