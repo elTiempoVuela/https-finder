@@ -1,12 +1,12 @@
 #labels Phase-Design
 ===0.33 (unreleased - 21Mar11)===
+  * Changed SSL detection to use a HEAD request rather than GET (should reduce bandwidth use, noticeably quicker detection in practice).  If HEAD fails with response code 405 (Amazon.de and a few other sites do this), it falls back to a GET request so detection still works.
   * Moved lots of code into init() function.  Added "firstrun" and "version" preferences which will be used for any firstrun/upgrade code (creating whitelist files)
   * Implemented console logging for errors
   * Auto-forward preference no longer stops "Save Rule" prompt.  User can auto-forward to https and it will still prompt to save https-everywhere rule unless "No rule prompt" pref is enabled. 
 
 
-===0.32 (unreleased - 20Mar11)===
-  * Changed SSL detection to use a HEAD request rather than GET (should reduce bandwidth use, noticeably quicker detection in practice).  If HEAD fails with response code 405 (Amazon.de and a few other sites do this), it falls back to a GET request so detection still works.
+===0.32 (unreleased - 20Mar11)===  
   * Implementing whitelist ([http://i.imgur.com/Xxtfy.png Preview])
   * Strings (displayed) moved into DTD and Properties file so any future localization should be quick and easy.
 
