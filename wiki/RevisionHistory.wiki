@@ -1,4 +1,11 @@
 #labels Phase-Design
+===0.32 (unreleased)===
+  * Changed SSL detection to use a HEAD request rather than GET (should reduce bandwidth use)
+
+  * Implementing whitelist ([http://i.imgur.com/Xxtfy.png Preview])
+
+  * Strings (displayed) moved into DTD and Properties file so any future localization should be quick and easy.
+
 ===0.31===
   * Fixes  Issue 4 : Top level/subdomain compatibility for auto-generated rules. HTTPS Everywhere rule creation should now work for all top level domains. Tested with two, three, and four letter TLDs as well as complex cases such as co.uk, com.au, etc. 
   * Improved recognition of bad SSL certificates. 
