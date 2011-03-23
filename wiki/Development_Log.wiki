@@ -1,3 +1,7 @@
+===0.33 (unreleased - 23Mar11)===
+  * Add/Remove rule now works (through preference window to back-end database).  Need to add disallow adding duplicate rules.
+
+  
 ===0.33 (unreleased - 22Mar11)===
   * First load of the extension now sets up httpsfinder.sqlite with whitelist table (id and rule columns)
   * Preference window linked with javascript functions for all buttons
