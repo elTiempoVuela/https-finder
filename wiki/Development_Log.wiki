@@ -1,7 +1,7 @@
 ===0.33 (unreleased - 22Mar11)===
   * First load of the extension now sets up httpsfinder.sqlite with whitelist table (id and rule columns)
   * Preference window linked with javascript functions for all buttons
-  * Preference window onLoad pulls whitelist rules from database and populates the listbox.  Add/Remove functions in still in progress.
+  * Preference window onLoad pulls whitelist rules from database and populates the listbox.  Add/Remove functions in still in progress. [http://i.imgur.com/j6eOq.png (preview)]
   * Basic implementation of whitelist detection (using nsIURI.host to match url to saved rule) - No HTTPS request is sent if the url is on the whitelist.  
 
 ===0.33 (unreleased - 21Mar11)===
