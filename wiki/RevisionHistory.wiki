@@ -1,4 +1,10 @@
 #labels Phase-Design
+===0.33 (unreleased - 22Mar11)===
+  * First load of the extension now sets up httpsfinder.sqlite with whitelist table (id and rule columns)
+  * Preference window linked with javascript functions for all buttons
+  * Preference window onLoad pulls whitelist rules from database and populates the listbox.  Add/Remove functions in still in progress.
+  * Basic implementation of whitelist detection (using nsIURI.host to match url to saved rule) - No HTTPS request is sent if the url is on the whitelist.  
+
 ===0.33 (unreleased - 21Mar11)===
   * Changed SSL detection to use a HEAD request rather than GET (should reduce bandwidth use, noticeably quicker detection in practice).  If HEAD fails with response code 405 (Amazon.de and a few other sites do this), it falls back to a GET request so detection still works.
   * Moved lots of code into init() function.  Added "firstrun" and "version" preferences which will be used for any firstrun/upgrade code (creating whitelist files)
