@@ -3,7 +3,7 @@
   * Fixed window event listener JavaScript console error
   * Adding duplicate or zero-length whitelist rule is not allowed
   * Fixed bug of whitelist table not being created on first run of the extension
-  * Whitelisting works for both wildcard subdomains (*.google.com) or specific domains(code.google.com).
+  * Whitelisting works for both wildcard subdomains ({{{*}}}.google.com) or specific domains(code.google.com).
   * Testing and cleaning/optimizing code for release as 0.34
 
 ===0.33 (unreleased - 23Mar11)===
