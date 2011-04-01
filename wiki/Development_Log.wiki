@@ -1,6 +1,10 @@
+===0.36 (unreleased 31Mar11)===
+  * Adding detection for whether or not HTTPS Everywhere is installed.  If not, prompts to add rules will be replaced by a prompt to install HTTPS Everywhere for rule enforcement (should be more user friendly so users realize they need both).
+  * Improving rule writing again.  Issue 14 has been fixed, as well as support for writing a "localhost" rule (special case as there is no sub or top level domain).  Will close the issue once the fix is in an official release.
+
 ===0.35 (unreleased 29Mar11)===
   * Adding "Add to whitelist" button to alert drop downs to save an extra trip into the preferences menu.  [http://i.imgur.com/QiXB8.png preview]
-  * Planning for 0.35 release with the above feature and a fix for issue 14 (rule writing for non-"www." subdomains).
+  * Planning for release with the above feature and a fix for issue 14 (rule writing for non-"www." subdomains).
 
 
 ===0.33 (unreleased - 25Mar11)===
