@@ -1,3 +1,7 @@
+===0.37 (unreleased 3Apr11)===
+  * Completed prompt if HTTPS Everywhere is not installed [http://i.imgur.com/8sc5W.png (preview)]. This only appears when rules are written if HTTPS Everywhere is not installed.  The rule is still saved and will be enforced when H.E. is installed (it won't overwrite the custom rules).
+  * More work on rule writing method (Asynchronous file writing)
+
 ===0.36 (unreleased 31Mar11)===
   * Adding detection for whether or not HTTPS Everywhere is installed.  If not, prompts to add rules will be replaced by a prompt to install HTTPS Everywhere for rule enforcement (should be more user friendly so users realize they need both).
   * Improving rule writing again.  Issue 14 has been fixed, as well as support for writing a "localhost" rule (special case as there is no sub or top level domain).  Will close the issue once the fix is in an official release.
