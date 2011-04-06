@@ -1,3 +1,7 @@
+===0.38 (unreleased 5Apr11)===
+  * Fixed bug where switching between tabs during detection could lead to false result (positive result from one tab would be enforced in the new tab if it was timed right).
+
+
 ===0.37 (unreleased 3Apr11)===
   * Completed prompt if HTTPS Everywhere is not installed [http://i.imgur.com/8sc5W.png (preview)]. This only appears when rules are written if HTTPS Everywhere is not installed.  The rule is still saved and will be enforced when H.E. is installed (it won't overwrite the custom rules).
   * More work on rule writing method (Asynchronous file writing)
