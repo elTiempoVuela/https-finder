@@ -1,3 +1,9 @@
+===0.42=== 
+_(unreleased 9Apr11)_
+  * HTTPS detection works on background tabs (both auto-forward and normal mode)
+  * Rule writing works when switching between foreground/background tabs
+  * Testing for release, still need to optimize code a bit.
+
 ===0.40=== 
 _(unreleased 8Apr11)_
   * Fixed preference window width bug in Linux
