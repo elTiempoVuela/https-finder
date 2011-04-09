@@ -1,27 +1,33 @@
-===0.40 (unreleased 8Apr11)===
+===0.40=== 
+_(unreleased 8Apr11)_
   * Fixed preference window width bug in Linux
   * Issue 1 partially fixed.  Detecting SSL on all tabs (background tabs too, not just the currently selected tab as it is now).  This isn't finished yet, but should be soon.
 
-===0.38 (unreleased 5Apr11)===
+===0.38=== 
+_(unreleased 5Apr11)_
   * Fixed bug where switching between tabs during detection could lead to false result (positive result from one tab would be enforced in the new tab if it was timed right).
 
 
-===0.37 (unreleased 3Apr11)===
+===0.37=== 
+_(unreleased 3Apr11)_
   * Completed prompt if HTTPS Everywhere is not installed [http://i.imgur.com/8sc5W.png (preview)]. This only appears when rules are written if HTTPS Everywhere is not installed.  The rule is still saved and will be enforced when H.E. is installed (it won't overwrite the custom rules).
   * More work on rule writing method (Asynchronous file writing)
 
-===0.36 (unreleased 31Mar11)===
+===0.36=== 
+_(unreleased 31Mar11)_
   * Adding detection for whether or not HTTPS Everywhere is installed.  If not, prompts to add rules will be replaced by a prompt to install HTTPS Everywhere for rule enforcement (should be more user friendly so users realize they need both).
   * Improving rule writing again.  Issue 14 has been fixed, as well as support for writing a "localhost" rule (special case as there is no sub or top level domain).  Will close the issue once the fix is in an official release.
 
-===0.35 (unreleased 29Mar11)===
+===0.35=== 
+_(unreleased 29Mar11)_
   * Adding "Add to whitelist" button to alert drop downs to save an extra trip into the preferences menu.  [http://i.imgur.com/QiXB8.png preview]
   * Planning for release with the above feature and a fix for issue 14 (rule writing for non-"www." subdomains).
 
 ===0.34 (released - 25Mar11)===
   * Tested version of 0.33 - Released 
 
-===0.33 (unreleased - 25Mar11)===
+===0.33=== 
+_(unreleased - 25Mar11)_
   * Session whitelist stays up to date with changes from the preferences window
   * Fixed window event listener JavaScript console error
   * Adding duplicate or zero-length whitelist rule is not allowed
@@ -30,36 +36,40 @@
   * Testing and cleaning/optimizing code for release as 0.34
   * 0.34 Released on Google Code and the Mozilla Add-on site
 
-===0.33 (unreleased - 23Mar11)===
+===0.33=== 
+_(unreleased - 23Mar11)_
   * Add/Remove rule now works (through preference window to back-end database).  Need to add disallow adding duplicate rules.
 
   
-===0.33 (unreleased - 22Mar11)===
+===0.33=== 
+_(unreleased - 22Mar11)_
   * First load of the extension now sets up httpsfinder.sqlite with whitelist table (id and rule columns)
   * Preference window linked with javascript functions for all buttons
   * Preference window onLoad pulls whitelist rules from database and populates the listbox.  Add/Remove functions in still in progress. [http://i.imgur.com/j6eOq.png (preview)]
   * Basic implementation of whitelist detection (using nsIURI.host to match url to saved rule) - No HTTPS request is sent if the url is on the whitelist.  
 
-===0.33 (unreleased - 21Mar11)===
+===0.33=== 
+_(unreleased - 21Mar11)_
   * Changed SSL detection to use a HEAD request rather than GET (should reduce bandwidth use, noticeably quicker detection in practice).  If HEAD fails with response code 405 (Amazon.de and a few other sites do this), it falls back to a GET request so detection still works.
   * Moved lots of code into init() function.  Added "firstrun" and "version" preferences which will be used for any firstrun/upgrade code (creating whitelist files)
   * Implemented console logging for errors
   * Auto-forward preference no longer stops "Save Rule" prompt.  User can auto-forward to https and it will still prompt to save https-everywhere rule unless "No rule prompt" pref is enabled. 
 
 
-===0.32 (unreleased - 20Mar11)===  
+===0.32=== 
+_(unreleased - 20Mar11)_
   * Implementing whitelist ([http://i.imgur.com/Xxtfy.png Preview])
   * Strings (displayed) moved into DTD and Properties file so any future localization should be quick and easy.
 
-===0.31===
+===0.31 (released - 20Mar11)===
   * Fixes  Issue 4 : Top level/subdomain compatibility for auto-generated rules. HTTPS Everywhere rule creation should now work for all top level domains. Tested with two, three, and four letter TLDs as well as complex cases such as co.uk, com.au, etc. 
   * Improved recognition of bad SSL certificates. 
 
-===0.30===
+===0.30 (released - 13Mar11)===
   * Added 3 preferences:
   * Enable/disable (without restarting FF)
   * Do not prompt for rule generation (only alert when HTTPS is available)
   * Auto-forward to HTTPS when available ("Silent mode") 
 
-===0.25===
+===0.25 (released - 17Feb11)===
   * Initial release
