@@ -1,3 +1,7 @@
+===0.40 (unreleased 8Apr11)===
+  * Fixed preference window width bug in Linux
+  * Issue 1 partially fixed.  Detecting SSL on all tabs (background tabs too, not just the currently selected tab as it is now).  This isn't finished yet, but should be soon.
+
 ===0.38 (unreleased 5Apr11)===
   * Fixed bug where switching between tabs during detection could lead to false result (positive result from one tab would be enforced in the new tab if it was timed right).
 
