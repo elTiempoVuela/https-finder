@@ -18,6 +18,8 @@
   * Adding "Add to whitelist" button to alert drop downs to save an extra trip into the preferences menu.  [http://i.imgur.com/QiXB8.png preview]
   * Planning for release with the above feature and a fix for issue 14 (rule writing for non-"www." subdomains).
 
+===0.34 (released - 25Mar11)===
+  * Tested version of 0.33 - Released 
 
 ===0.33 (unreleased - 25Mar11)===
   * Session whitelist stays up to date with changes from the preferences window
