@@ -1,17 +1,11 @@
 ===0.44 (released - 10Apr11)===
   * Testing complete on Ubuntu/Windows 7.  Released with the following changes:
   * "Add to whitelist" button is now on the notification drop down
-
   * When user creates rule, if HTTPS Everywhere is not installed they are prompted to download it.
-
   * Issue 14 fixed - "www." is not added to rules if there is a non-www subdomain in the host.
-
   * Issue 1 fixed - HTTPS Finder now runs on all background tabs, not just the currently selected tab.
-
   * Preference window layout improved/optimized
-
   * Minor bug fixes.  
-
   * XML comment with HTTPS Finder version number added to rules.
 
 ===0.43=== 
