@@ -1,3 +1,7 @@
+===0.45===
+_(unreleased 12Apr11)_
+  * Added 403 to the list of HEAD responses that result in falling back to GET detection. User reported issue where valid HTTPS site was being missed.  Looking into an "Advanced" options menu to just use GET only (It's a little slower but more reliable).  Thank you to the user who reported this!
+
 ===0.44 (released - 10Apr11)===
   * Testing complete on Ubuntu/Windows 7.  Released with the following changes:
   * "Add to whitelist" button is now on the notification drop down
