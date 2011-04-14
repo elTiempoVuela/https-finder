@@ -1,4 +1,4 @@
-===0.45===
+===0.45 (released - 13Apr11)===
 _(unreleased 13Apr11)_
   * Fixed bug allowing duplicate rules being created (Google.xml, Google-1.xml, etc).  If the rule already exists, it is first deleted, then the rule writing proceeds as normal.
   * Added "Restart now"/"Restart later" buttons after writing a rule (saves all open tabs).  If user chooses to restart later, the hostname is added to a temp "No Alert" list.  Then there are no more "HTTPS Found" or "HTTPS Enforced" alerts for this host.
