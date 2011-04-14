@@ -1,6 +1,10 @@
 ===0.45===
+_(unreleased 13Apr11)_
+  * Fixed bug allowing duplicate rules being created (Google.xml, Google-1.xml, etc).  If the rule already exists, it is first deleted, then the rule writing proceeds as normal.
+
+===0.45===
 _(unreleased 12Apr11)_
-  * Added 403 to the list of HEAD responses that result in falling back to GET detection. User reported issue where valid HTTPS site was being missed.  Looking into an "Advanced" options menu to just use GET only (It's a little slower but more reliable).  Thank you to the user who reported this!
+  * Added 403 to the list of HEAD responses that result in falling back to GET detection. Looking into an "Advanced" options menu to just use GET only (It's a little slower but more reliable).  Thank you to the user who reported this!
 
 ===0.44 (released - 10Apr11)===
   * Testing complete on Ubuntu/Windows 7.  Released with the following changes:
