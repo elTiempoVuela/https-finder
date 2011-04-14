@@ -1,6 +1,6 @@
 ===0.45 (released - 13Apr11)===
   * Fixed bug allowing duplicate rules being created (Google.xml, Google-1.xml, etc).  If the rule already exists, it is first deleted, then the rule writing proceeds as normal.
-  * Added "Restart now"/"Restart later" buttons after writing a rule (saves all open tabs).  If user chooses to restart later, the hostname is added to a temp "No Alert" list.  Then there are no more "HTTPS Found" or "HTTPS Enforced" alerts for this host.
+  * Added "Restart now"/"Restart later" buttons after writing a rule (saves all open tabs).  If user chooses to restart later, the hostname is added to a temp "No Alert" list.  Then there are no more "HTTPS Found" or "HTTPS Enforced" alerts for this host during the session.
   * Fixed notification error on Mac OSX. 
   * Released 0.45 on Google Code as an "unofficial" release.
 
