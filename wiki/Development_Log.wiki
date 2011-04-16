@@ -1,3 +1,10 @@
+===0.46===
+_(unreleased 15Apr11)_
+  * Fixed bug where whitelist is not imported first run after upgrading extension versions
+  * Added advanced tab in preferences
+  * Issue 18: Added preference for GET request detection only, or HEAD falling back to GET [http://i.imgur.com/SYWZe.png (preview)]
+  * Issue 16: Added rule preview popup to allow editing of the auto-generated rule before saving it  [http://i.imgur.com/K1sJy.png (preview)]
+
 ===0.45 (released - 13Apr11)===
   * Fixed bug allowing duplicate rules being created (Google.xml, Google-1.xml, etc).  If the rule already exists, it is first deleted, then the rule writing proceeds as normal.
   * Added "Restart now"/"Restart later" buttons after writing a rule (saves all open tabs).  If user chooses to restart later, the hostname is added to a temp "No Alert" list.  Then there are no more "HTTPS Found" or "HTTPS Enforced" alerts for this host during the session.
