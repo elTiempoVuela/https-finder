@@ -1,3 +1,8 @@
+===0.47===
+_(unreleased 17Apr11)_
+  * Finished rule preview popup.  
+  * Added HTTPS Finder menu item to Tools drop down (Buttsons for Whitelist/Preferences, Help, and to the Google Code page). 
+
 ===0.46===
 _(unreleased 15Apr11)_
   * Fixed bug where whitelist is not imported in the first run after upgrading extension versions
