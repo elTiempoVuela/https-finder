@@ -1,6 +1,10 @@
 ===0.49===
 _(unreleased 21Apr11)_
-  * Fixed bug where improper rule information is used when multiple tabs detect SSL (and one is closed, the rule information would sometimes be "off-by-one"). 
+  * Fixed bug where if SSL is detected on two (or more) tabs, close the left tab, then save a rule from the right tab, the rule information would be off by one (for the other tab).
+
+  * Added link to HTTPS Everywhere ruleset information to the Rule Preview dialog (so you can check syntax and edit before saving)
+
+  * Minor string formatting so that the notification drop downs only take up one line of text. (Linux with 1280x1024 was the test/cutoff)
 
 ===0.47===
 _(unreleased 17Apr11)_
