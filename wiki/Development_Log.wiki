@@ -1,4 +1,10 @@
 ===0.49===
+_(unreleased 22Apr11)_
+  * Simplified alerts (no popup AND drop down).  After creating a rule you now only get one dropdown - restart for rule to take over, or get https everywhere (If it's not installed)
+  * "Not now" and "No, Stay here" buttons on HTTPS alerts now add to a session whilelist.  You can clear the session list by clicking Tools > HTTPS Finder > Clear temporary whitelist
+  * Tested for release in Ubuntu, Win7, and OSX.  Almost finished testing everything.  Mozilla should have 0.44 reviewed in the next 24 hours, at which point I will submit this as 0.50.
+
+===0.49===
 _(unreleased 21Apr11)_
   * Fixed bug where if SSL is detected on two (or more) tabs, close the left tab, then save a rule from the right tab, the rule information would be off by one (for the other tab).
 
