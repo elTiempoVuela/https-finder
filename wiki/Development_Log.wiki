@@ -1,3 +1,6 @@
+===0.51 (released - 25Apr11)===
+ * Uploaded compatibility build of 0.51 for Firefox nightlies.  Not fully tested yet, but seems to work.
+
 ===0.51 (released - 23Apr11)===
  * Two minor bug fixes that will be included in the release submitted to Mozilla:
   * Version checking (for detecting if HTTPS Everywhere is installed) was failing on pre-release builds of Firefox (For example, 6.0.a1 wouldn't be checked right because of the a).  This is fixed now.
