@@ -1,3 +1,8 @@
+===0.53===
+_(unreleased 3May11)_
+  * Whitelist listbox (in preferences) now allows selection of multiple items. Can delete one or more items at the same time this way.
+  * Next issue to address is detection of redirect loops between HTTP/HTTPS.
+
 ===0.52===
 _(unreleased 3May11)_
   * Issue 19 fixed: Auto-forward to HTTPS doesn't get logged in history when the url is replaced (So be at website "x", go to an HTTP page "y" that auto forwards to HTTPS "y", now one click of the back button takes you back to the original page "x"). Before the click would take you back to HTTP, then if you weren't fast enough, would autoforward to HTTPS again.
