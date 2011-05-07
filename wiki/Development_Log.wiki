@@ -1,6 +1,6 @@
 ===0.54===
 _(unreleased 6May11)_
-  * Page security state is now checked after forwarding to HTTPS (in addition to certificate checking BEFORE alerting or forwarding). There is a new option on the Perferences > Advanced page to temporarily or permanently whitelist pages that are only partially encrypted. [http://i.imgur.com/LrzbI.png (Preview)]
+  * Page security state is now checked after forwarding to HTTPS (in addition to certificate checking BEFORE alerting or forwarding). There is a new option under Perferences > Advanced to temporarily or permanently whitelist pages that are only partially encrypted. [http://i.imgur.com/LrzbI.png (Preview)]
   * Fixed bug where opening new tabs would generate "SSL Found" notification (if a tab had previously found it, then been closed without dismissing the notification - it would stick around for that tab index) 
   * Partial implementation of "recent redirects". If an HTTP page redirects to HTTPS, then tries to redirect again within 3 seconds on the same tab, it will be whitelisted (to avoid infinite redirect loops).
 
