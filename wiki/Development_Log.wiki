@@ -1,3 +1,11 @@
+===0.56===
+_(unreleased 7May11)_
+  * Issue 11: Fixed. Redirect loops detected in same tab with 3 seconds  are automatically whitelisted. Multiple page loads within 3 seconds, but in different tabs, will not trigger the whitelisting (unless they are redirecting within the same tab index).
+
+===0.55===
+_(unreleased 7May11)_
+  * Code improvements and broke up some long methods
+
 ===0.54===
 _(unreleased 6May11)_
   * Fixed bug where opening new tabs would generate "SSL Found" notification (if a tab had previously found it, then been closed without dismissing the notification - it would stick around for that tab index) 
