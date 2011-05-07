@@ -2,12 +2,12 @@
 _(unreleased 6May11)_
   * Page security state is now checked after forwarding to HTTPS (in addition to certificate checking BEFORE alerting or forwarding). There is a new option under Perferences > Advanced to temporarily or permanently whitelist pages that are only partially encrypted. [http://i.imgur.com/LrzbI.png (Preview)]
   * Fixed bug where opening new tabs would generate "SSL Found" notification (if a tab had previously found it, then been closed without dismissing the notification - it would stick around for that tab index) 
-  * Partial implementation of "recent redirects". If an HTTP page redirects to HTTPS, then tries to redirect again within 3 seconds on the same tab, it will be whitelisted (to avoid infinite redirect loops).
+  * Partial implementation of "recent redirects". If an HTTP page redirects to HTTPS, then tries to redirect again within 3 seconds on the same tab, it will be whitelisted to avoid infinite redirect loops (Issue 11).
 
 ===0.53===
 _(unreleased 3May11)_
   * Whitelist listbox (in preferences) now allows selection of multiple items. Can delete one or more items at the same time this way.
-  * Next issue to address is detection of redirect loops between HTTP/HTTPS.
+  * Next issue to address is detection of redirect loops between HTTP/HTTPS (Issue 11).
 
 ===0.52===
 _(unreleased 3May11)_
