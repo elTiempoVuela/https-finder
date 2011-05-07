@@ -1,3 +1,9 @@
+===0.54===
+_(unreleased 6May11)_
+  * After forwarding to HTTPS, page security state is now checked. There is a new option on the Perferences > Advanced page to temporarily or permanently whitelist pages which are only partially encrypted. This way, if you only care about fully encrypted SSL pages, the whitelist will build itself as you browse.
+  * Fixed bug there opening new tabs will sometimes generate "SSL Found" notification (if a tab had previously found it, then been closed). 
+  * Partial implementation of "recent redirects". If an HTTP page redirects to HTTPS, then tries to redirect again within 3-5 seconds (haven't decided yet), it will be whitelisted (to avoid infinite redirect loops).
+
 ===0.53===
 _(unreleased 3May11)_
   * Whitelist listbox (in preferences) now allows selection of multiple items. Can delete one or more items at the same time this way.
