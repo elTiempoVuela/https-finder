@@ -1,3 +1,7 @@
+===0.57===
+_(unreleased 7May11)_
+  * Issue 10: Partial fix (for "No-https" hosts). Cert errors or non "OK" https responses result in the host being added to the session whitelist. Re-detection will occur after browser restart or after user clicks Tools > HTTPS Finder > Clear temporary whitelist
+
 ===0.56===
 _(unreleased 7May11)_
   * Issue 11: Fixed. Redirect loops detected in same tab with 3 seconds  are automatically whitelisted. Multiple page loads within 3 seconds, but in different tabs, will not trigger the whitelisting (unless they are redirecting within the same tab index).
