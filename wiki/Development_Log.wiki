@@ -22,7 +22,7 @@ _(unreleased 3May11)_
 
 ===0.52===
 _(unreleased 3May11)_
-  * Issue 19 fixed: Auto-forward to HTTPS doesn't get logged in history when the url is replaced (So be at website "x", go to an HTTP page "y" that auto forwards to HTTPS "y", now one click of the back button takes you back to the original page "x"). Before the click would take you back to HTTP, then if you weren't fast enough, would autoforward to HTTPS again.
+  * Issue 19 fixed: Auto-forward to HTTPS doesn't get logged in history when the url is replaced (So auto-forward to HTTPS 'replaces' the page instead of just forwarding to a new HTTPS url). Before, clicking the back button would take you back to HTTP, then if you weren't fast enough, would autoforward to HTTPS again. Now it skips past the original HTTP.
 
 ===0.51 (released - 25Apr11)===
  * Uploaded compatibility build of 0.51 for Firefox nightlies.  Not fully tested yet, but seems to work.
