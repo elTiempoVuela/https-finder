@@ -1,3 +1,7 @@
+===0.58===
+_(unreleased 8May11)_
+  * Added German translation/localization. (Thanks milupo!)
+
 ===0.57===
 _(unreleased 7May11)_
   * Issue 10: Partial fix (for "No-https" hosts). Cert errors or non "OK" https responses result in the host being added to the session whitelist. Re-detection will occur after browser restart or after user clicks Tools > HTTPS Finder > Clear temporary whitelist
