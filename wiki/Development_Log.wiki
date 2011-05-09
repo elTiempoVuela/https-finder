@@ -1,3 +1,6 @@
+===0.58 (released - 8May11)===
+ * Development build of 0.58 uploaded. Not an 'official' release though.
+
 ===0.58===
 _(unreleased 8May11)_
   * Added German translation/localization. (Thanks milupo!)
