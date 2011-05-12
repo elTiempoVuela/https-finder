@@ -2,6 +2,7 @@
 _(unreleased 11May11)_
   * Added German translations for a few more strings
   * Improved preference window layout width when using non-English locales
+  * Fixed bug where clicking "not now" after auto-enforcing HTTPS on Google would session whitelist encrypted.google.com instead of www.google.com (Add to whitelist button worked correctly)
 
 ===0.58 (released - 8May11)===
  * Development build of 0.58 uploaded. Not an 'official' release though.
