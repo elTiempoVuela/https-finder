@@ -1,6 +1,6 @@
 ===0.59===
 _(unreleased 11May11)_
-  * Fixed a couple German strings
+  * Added German translations for a few more strings
   * Improved preference window layout width when using non-English locales
 
 ===0.58 (released - 8May11)===
