@@ -1,6 +1,6 @@
 ===0.61===
 _(unreleased 12May11)_
-  * Implementing HTTP observer to replace DOMContentLoaded event for firing HTTPS detection. This way HTTPS detection can begin as soon as a link is clicked rather than waiting for the intial response that loads the http page.
+  * Issue 8: Implementing HTTP observer to replace DOMContentLoaded event for firing HTTPS detection. This way HTTPS detection can begin as soon as a link is clicked rather than waiting for the intial response that loads the http page.
 
 ===0.60===
 _(unreleased 12May11)_
