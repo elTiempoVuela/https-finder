@@ -1,7 +1,7 @@
 ===0.60 (released - 12May11)===
   * Fixed 0.58 bug where Enable checkbox (in preferences) did not work
   * Adding namespacing, wrapped all preferences.js functions in httpsfinder.preferences object
-  * Added preference listener. Enable checkbox now adds/removes the window listener instead of just returning every time the event was called (if disabled). Whitelist updated immediately on change rather than after first onPageLoad event call
+  * Added preference listener. Enable checkbox now adds/removes the window listener instead of just returning every time the event was fired (if disabled). Whitelist updates immediately on change rather than after first onPageLoad event fire
   * Fixed code removing event listeners
 
 ===0.59===
