@@ -1,7 +1,7 @@
 #labels Featured
 ===0.62===
 _(unreleased 13May11)_
-  * HTTPS detection/forwarding is working via the HTTP observer (all rule writing/whitelist functions work as well). It's dramatically faster, but causes problems on a few sites that use CDNs (they use the same load flags as page changes, but they're page content instead). Still working on a good solution to filter these...
+  * HTTPS detection/forwarding is working via the HTTP observer (all rule writing/whitelist functions work as well). It's dramatically faster - nearly instant on some pages, but causes problems on a few sites that use CDNs (they use the same load flags as page changes, but they're page content instead). Still working on a good solution to filter these...
 
 
 ===0.61===
