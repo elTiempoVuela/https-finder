@@ -1,0 +1,197 @@
+===0.62===
+_(unreleased 13May11)_
+  * HTTPS detection/forwarding is working via the HTTP observer (all rule writing/whitelist functions work as well). It's dramatically faster, but causes problems on a few sites that use CDNs (they use the same load flags as page changes, but they're page content instead). Still working on a good solution to filter these...
+
+
+===0.61===
+_(unreleased 12May11)_
+  * Issue 8: Implementing HTTP observer to replace DOMContentLoaded event for firing HTTPS detection. This way HTTPS detection can begin as soon as a link is clicked rather than waiting for the intial response that loads the http page.
+
+===0.60===
+_(unreleased 12May11)_
+  * Fixed 0.58 (dev build, not official release) bug where Enable checkbox (in preferences) did not work
+  * Better namespacing, wrapped all preferences.js functions in httpsfinder.preferences object
+  * Added preference change observer. Enable checkbox now adds/removes the window listener instead of just returning every time the event was fired (if disabled). Whitelist updates immediately on change rather than after first onPageLoad event fire
+  * Fixed code removing event listeners
+
+===0.59===
+_(unreleased 11May11)_
+  * Added German translations for a few more strings
+  * Improved preference window layout width when using non-English locales
+  * Fixed bug where clicking "not now" after auto-enforcing HTTPS on Google would session whitelist encrypted.google.com instead of www.google.com (Add to whitelist button worked correctly)
+
+===0.58 (released - 8May11)===
+ * Development build of 0.58 uploaded. Not an 'official' release though.
+
+===0.58===
+_(unreleased 8May11)_
+  * Added German translation/localization. (Thanks milupo!)
+
+===0.57===
+_(unreleased 7May11)_
+  * Issue 10: Partial fix (for "No-https" hosts). Cert errors or non "OK" https responses result in the host being added to the session whitelist. Re-detection will occur after browser restart or after user clicks Tools > HTTPS Finder > Clear temporary whitelist
+
+===0.56===
+_(unreleased 7May11)_
+  * Issue 11: Fixed. Redirect loops detected in same tab with 3 seconds  are automatically whitelisted. Multiple page loads within 3 seconds, but in different tabs, will not trigger the whitelisting (unless they are redirecting within the same tab index).
+
+===0.55===
+_(unreleased 7May11)_
+  * Code improvements and broke up some long methods
+
+===0.54===
+_(unreleased 6May11)_
+  * Fixed bug where opening new tabs would generate "SSL Found" notification (if a tab had previously found it, then been closed without dismissing the notification - it would stick around for that tab index) 
+  * Partial implementation of "recent redirects". If an HTTP page redirects to HTTPS, then tries to redirect again within 3 seconds on the same tab, it will be whitelisted to avoid infinite redirect loops (Issue 11).
+
+===0.53===
+_(unreleased 3May11)_
+  * Whitelist listbox (in preferences) now allows selection of multiple items. Can delete one or more items at the same time this way.
+  * Next issue to address is detection of redirect loops between HTTP/HTTPS (Issue 11).
+
+===0.52===
+_(unreleased 3May11)_
+  * Issue 19 fixed: Auto-forward to HTTPS doesn't get logged in history when the url is replaced (So auto-forward to HTTPS 'replaces' the page instead of just forwarding to a new HTTPS url). Before, clicking the back button would take you back to HTTP, then if you weren't fast enough, would autoforward to HTTPS again. Now it skips past the original HTTP.
+
+===0.51 (released - 25Apr11)===
+ * Uploaded compatibility build of 0.51 for Firefox nightlies.  Not fully tested yet, but seems to work.
+
+===0.51 (released - 23Apr11)===
+ * Two minor bug fixes that will be included in the release submitted to Mozilla:
+  * Version checking (for detecting if HTTPS Everywhere is installed) was failing on pre-release builds of Firefox (For example, 6.0.a1 wouldn't be checked right because of the a).  This is fixed now.
+  * httpsfinder.sqlite and whitelist table get automatically recreated they are manually deleted.
+
+===0.50 (released - 22Apr11)===
+ * See changelog in downloads section (or below).  
+
+===0.49===
+_(unreleased 22Apr11)_
+  * Simplified alerts (no popup AND drop down).  After creating a rule you now only get one dropdown - restart for rule to take over, or get https everywhere (If it's not installed)
+  * "Not now" and "No, Stay here" buttons on HTTPS alerts now add to the imported whitelist for the duration of the session.  You can clear the session whitelist by clicking Tools > HTTPS Finder > Clear temporary whitelist
+  * Almost done testing in Win7, Ubuntu, and OSX. Mozilla should have 0.44 reviewed in the next 24 hours, at which point I will submit this as 0.50.
+
+===0.49===
+_(unreleased 21Apr11)_
+  * Fixed bug where if SSL is detected on two (or more) tabs, close the left tab, then save a rule from the right tab, the rule information would be off by one (for the other tab).
+
+  * Added link to HTTPS Everywhere ruleset information to the Rule Preview dialog (so you can check syntax and edit before saving)
+
+  * Minor string formatting so that the notification drop downs only take up one line of text. (Linux with 1280x1024 was the test/cutoff)
+
+===0.47===
+_(unreleased 17Apr11)_
+  * Finished rule preview popup.  
+  * Added HTTPS Finder menu item to Tools drop down (Buttsons for Whitelist/Preferences, Help, and to the Google Code page). 
+
+===0.46===
+_(unreleased 15Apr11)_
+  * Fixed bug where whitelist is not imported in the first run after upgrading extension versions
+  * Added advanced tab in preferences
+  * Issue 18: Added preference for GET request detection only, or HEAD falling back to GET [http://i.imgur.com/FK3ks.png (preview)]
+  * Issue 16: Added rule preview popup to allow editing of the auto-generated rule before saving it  [http://i.imgur.com/K1sJy.png (preview)]
+
+===0.45 (released - 13Apr11)===
+  * Fixed bug allowing duplicate rules being created (Google.xml, Google-1.xml, etc).  If the rule already exists, it is first deleted, then the rule writing proceeds as normal.
+  * Added "Restart now"/"Restart later" buttons after writing a rule (saves all open tabs).  If user chooses to restart later, the hostname is added to a temp "No Alert" list.  Then there are no more "HTTPS Found" or "HTTPS Enforced" alerts for this host during the session.
+  * Fixed notification error on Mac OSX. 
+  * Released 0.45 on Google Code as an "unofficial" release.
+
+===0.45===
+_(unreleased 12Apr11)_
+  * Added 403 to the list of HEAD responses that result in falling back to GET detection. Looking into an "Advanced" options menu to just use GET only (It's a little slower but more reliable).  Thank you to the user who reported this!
+
+===0.44 (released - 10Apr11)===
+  * Testing complete on Ubuntu/Windows 7.  Released with the following changes:
+  * "Add to whitelist" button is now on the notification drop down
+  * When user creates rule, if HTTPS Everywhere is not installed they are prompted to download it.
+  * Issue 14 fixed - "www." is not added to rules if there is a non-www subdomain in the host.
+  * Issue 1 fixed - HTTPS Finder now runs on all background tabs, not just the currently selected tab.
+  * Preference window layout improved/optimized
+  * Minor bug fixes.  
+  * XML comment with HTTPS Finder version number added to rules.
+
+===0.43=== 
+_(unreleased 9Apr11)_
+  * Minor bug fixes, testing for release
+
+===0.42=== 
+_(unreleased 9Apr11)_
+  * HTTPS detection works on background tabs (both auto-forward and normal mode)
+  * Rule writing works when switching between foreground/background tabs
+  * Testing for release, still need to optimize code a bit.
+
+===0.40=== 
+_(unreleased 8Apr11)_
+  * Fixed preference window width bug in Linux
+  * Issue 1 partially fixed.  Detecting SSL on all tabs (background tabs too, not just the currently selected tab as it is now).  This isn't finished yet, but should be soon.
+
+===0.38=== 
+_(unreleased 5Apr11)_
+  * Fixed bug where switching between tabs during detection could lead to false result (positive result from one tab would be enforced in the new tab if it was timed right).
+
+
+===0.37=== 
+_(unreleased 3Apr11)_
+  * Completed prompt if HTTPS Everywhere is not installed [http://i.imgur.com/8sc5W.png (preview)]. This only appears when rules are written if HTTPS Everywhere is not installed.  The rule is still saved and will be enforced when H.E. is installed (it won't overwrite the custom rules).
+  * More work on rule writing method (Asynchronous file writing)
+
+===0.36=== 
+_(unreleased 31Mar11)_
+  * Adding detection for whether or not HTTPS Everywhere is installed.  If not, prompts to add rules will be replaced by a prompt to install HTTPS Everywhere for rule enforcement (should be more user friendly so users realize they need both).
+  * Improving rule writing again.  Issue 14 has been fixed, as well as support for writing a "localhost" rule (special case as there is no sub or top level domain).  Will close the issue once the fix is in an official release.
+
+===0.35=== 
+_(unreleased 29Mar11)_
+  * Adding "Add to whitelist" button to alert drop downs to save an extra trip into the preferences menu.  [http://i.imgur.com/QiXB8.png preview]
+  * Planning for release with the above feature and a fix for issue 14 (rule writing for non-"www." subdomains).
+
+===0.34 (released - 25Mar11)===
+  * Tested version of 0.33 - Released 
+
+===0.33=== 
+_(unreleased - 25Mar11)_
+  * Session whitelist stays up to date with changes from the preferences window
+  * Fixed window event listener JavaScript console error
+  * Adding duplicate or zero-length whitelist rule is not allowed
+  * Fixed bug of whitelist table not being created on first run of the extension
+  * Whitelisting works for both wildcard subdomains ({{{*}}}.google.com) or specific domains(code.google.com).
+  * Testing and cleaning/optimizing code for release as 0.34
+  * 0.34 Released on Google Code and the Mozilla Add-on site
+
+===0.33=== 
+_(unreleased - 23Mar11)_
+  * Add/Remove rule now works (through preference window to back-end database).  Need to add disallow adding duplicate rules.
+
+  
+===0.33=== 
+_(unreleased - 22Mar11)_
+  * First load of the extension now sets up httpsfinder.sqlite with whitelist table (id and rule columns)
+  * Preference window linked with javascript functions for all buttons
+  * Preference window onLoad pulls whitelist rules from database and populates the listbox.  Add/Remove functions in still in progress. [http://i.imgur.com/j6eOq.png (preview)]
+  * Basic implementation of whitelist detection (using nsIURI.host to match url to saved rule) - No HTTPS request is sent if the url is on the whitelist.  
+
+===0.33=== 
+_(unreleased - 21Mar11)_
+  * Changed SSL detection to use a HEAD request rather than GET (should reduce bandwidth use, noticeably quicker detection in practice).  If HEAD fails with response code 405 (Amazon.de and a few other sites do this), it falls back to a GET request so detection still works.
+  * Moved lots of code into init() function.  Added "firstrun" and "version" preferences which will be used for any firstrun/upgrade code (creating whitelist files)
+  * Implemented console logging for errors
+  * Auto-forward preference no longer stops "Save Rule" prompt.  User can auto-forward to https and it will still prompt to save https-everywhere rule unless "No rule prompt" pref is enabled. 
+
+
+===0.32=== 
+_(unreleased - 20Mar11)_
+  * Implementing whitelist ([http://i.imgur.com/Xxtfy.png Preview])
+  * Strings (displayed) moved into DTD and Properties file so any future localization should be quick and easy.
+
+===0.31 (released - 20Mar11)===
+  * Fixes  Issue 4 : Top level/subdomain compatibility for auto-generated rules. HTTPS Everywhere rule creation should now work for all top level domains. Tested with two, three, and four letter TLDs as well as complex cases such as co.uk, com.au, etc. 
+  * Improved recognition of bad SSL certificates. 
+
+===0.30 (released - 13Mar11)===
+  * Added 3 preferences:
+  * Enable/disable (without restarting FF)
+  * Do not prompt for rule generation (only alert when HTTPS is available)
+  * Auto-forward to HTTPS when available ("Silent mode") 
+
+===0.25 (released - 17Feb11)===
+  * Initial release
