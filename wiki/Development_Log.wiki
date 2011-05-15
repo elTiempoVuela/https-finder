@@ -2,7 +2,7 @@
 ===0.63===
 _(unreleased 14May11)_
   * More work with the HTTP Observer. to avoid weird server responses causing multiple HTTPS 'detection' requests, we whitelist automatically as soon as the first request is sent. If there's a good response, we remove it from the whitelist, otherwise we just leave it in. 
-  * Matching host name of tab content document and detection response before alerting/automatically redirecting to HTTPS. Ignoring the subdomain (google.com forwards to encrypted.google.com), if these hosts don't match we flag it invalid and ignore. This fixes the problem of content delivery networks causing alerts/forwards while loading page content.
+  * Matching host name of tab content document and detection response before alerting/automatically redirecting to HTTPS. Ignoring the subdomain (www.google.com forwards to encrypted.google.com), if these hosts don't match we flag it invalid and ignore. This fixes the problem of content delivery networks causing alerts/forwards while loading page content.
   * Planning to implement a "good ssl" cache of sites that returned valid responses. May make this optional though, or just set a relatively short timeout on it in case a cert is revoked/expired while in the "good" cache.
 
 ===0.62===
