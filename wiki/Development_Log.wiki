@@ -1,7 +1,7 @@
 #labels Featured
 ===0.64===
 _(unreleased 18May11)_
-  * A couple bug fixes.
+  * Fixed a few minor bugs related to the recent rewrite.
 
 ===0.64===
 _(unreleased 16May11)_
