@@ -1,5 +1,9 @@
 #labels Featured
 ===0.64===
+_(unreleased 18May11)_
+  * A couple bug fixes.
+
+===0.64===
 _(unreleased 16May11)_
   * Implementing cache for "good SSL" pages to eliminate the need to recheck HTTPS and wait for the response.
   * This presents the CDN issue again (see 0.62 notes), because we can't just check the tab location since the response from the cache comes in before the tab actually changes locations. The result of this is that currently going from "A.com" to cached "B.com", it still re-detects on the first entry into "B.com". Once there, the tab location matches (Location: B.com, loading page with hostname B.com) and any links back to HTTP://B.com are automatically switched to HTTPS without waiting for another detection. 
