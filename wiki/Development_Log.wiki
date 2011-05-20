@@ -1,5 +1,9 @@
 #labels Featured
 ===0.64===
+_(unreleased 19May11)_
+  *  A couple more bug fixes. Almost ready to release test version (sometime this weekend). 
+
+===0.64===
 _(unreleased 18May11)_
   * Fixed a few minor bugs related to the recent rewrite.
 
