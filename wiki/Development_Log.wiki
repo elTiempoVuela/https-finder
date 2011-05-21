@@ -1,4 +1,8 @@
 #labels Featured
+===0.65===
+_(unreleased 21May11)_
+  *  Version 0.65 being tested for release  
+
 ===0.64===
 _(unreleased 19May11)_
   *  A couple more bug fixes. Almost ready to release test version (sometime this weekend). 
