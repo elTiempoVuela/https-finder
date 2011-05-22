@@ -1,4 +1,7 @@
 #labels Featured
+===0.65 (released - 21May11)===
+ * Released 0.65 as a development build. Waiting a couple days to see if I get any major bug reports, then submitting to Mozilla.  Download available [http://code.google.com/p/https-finder/downloads/detail?name=httpsfinder065dev.xpi here.]
+
 ===0.65===
 _(unreleased 21May11)_
   *  Version 0.65 being tested for release  
