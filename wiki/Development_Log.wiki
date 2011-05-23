@@ -1,6 +1,6 @@
 #labels Featured
 ===0.66 (released - 23May11)===
- * Released 0.66 to Mozilla and Google Code. It's basically 0.65dev + a few minor fixes/tweaks. Available [http://code.google.com/p/https-finder/downloads/detail?name=httpsfinder065dev.xpi here.]
+ * Released 0.66 to Mozilla and Google Code. It's basically 0.65dev + a few minor fixes/tweaks. Available [http://code.google.com/p/https-finder/downloads/detail?name=httpsfinder066MozRelease.xpi here.]
 
 
 ===0.65 (released - 21May11)===
