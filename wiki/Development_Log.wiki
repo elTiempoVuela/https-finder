@@ -1,4 +1,8 @@
 #labels Featured
+===0.68===
+_(unreleased 26May11)_
+  *  Added Dutch translation, other bug fixes. More info [https://code.google.com/p/https-finder/source/list here.]
+
 ===0.67===
 _(unreleased 23May11)_
   *  Fixed German translation errors (Thank you for the email!)
