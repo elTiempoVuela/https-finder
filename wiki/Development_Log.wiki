@@ -1,4 +1,9 @@
 #labels Featured
+===0.69===
+_(unreleased 29May11)_
+  *  Fixed issue 26
+  *  Set 4 second timeout where restart prompt will auto-dismiss itself. Will make this a user option to specify seconds.
+
 ===0.68 (released - 26May11)===
   * Since 0.67: Added Dutch translation. 
 
