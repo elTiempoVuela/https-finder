@@ -1,4 +1,9 @@
 #labels Featured
+===0.70d1===
+_(unreleased 1Jun11)_
+  *  Configurable auto-dismiss time added for drop down alerts (user can set a number of seconds for the alert to dismiss itself).
+
+
 ===0.69===
 _(unreleased 29May11)_
   *  Fixed issue 26
