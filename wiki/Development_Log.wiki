@@ -1,4 +1,8 @@
 #labels Featured
+===0.70===
+_(unreleased 5Jun11)_
+  * Added Polish locale (not fully tested yet)
+
 ===0.70d2===
 _(unreleased 2Jun11)_
   *  Issue 28: Web page links in the preference window now open a new tab under then prefwindow (modal) instead of a new Firefox window.
@@ -6,7 +10,6 @@ _(unreleased 2Jun11)_
 ===0.70d1===
 _(unreleased 1Jun11)_
   *  Configurable auto-dismiss time added for drop down alerts (user can set a number of seconds for the alert to dismiss itself).
-
 
 ===0.69===
 _(unreleased 29May11)_
