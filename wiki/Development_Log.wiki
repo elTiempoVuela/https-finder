@@ -1,4 +1,8 @@
 #labels Featured
+===0.71d1===
+_(unreleased 9Jun11)_
+  * Auto-dismiss alerts now works across background tabs
+
 ===0.70===
 _(unreleased 5Jun11)_
   * Added Polish locale (not fully tested yet)
