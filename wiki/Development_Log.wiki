@@ -1,4 +1,10 @@
 #labels Featured
+===0.71d2===
+_(unreleased 15Jun11)_
+  * Minor code and method structure improvements
+  * Fixed bad cropping on menu bar help icon
+  * Still don't have internet on my PC, which is why development has been slow lately. 
+
 ===0.71d1===
 _(unreleased 9Jun11)_
   * Auto-dismiss alerts now works across background tabs
