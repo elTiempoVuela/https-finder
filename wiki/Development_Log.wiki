@@ -1,4 +1,8 @@
 #labels Featured
+===0.71d3 (released - 16Jun11)===
+  * Fixed Polish translation keys, tested polish locale
+  * Released 0.71d3 as development/test build.
+
 ===0.71d2===
 _(unreleased 15Jun11)_
   * Minor code and method structure improvements
