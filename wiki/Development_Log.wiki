@@ -1,4 +1,8 @@
 #labels Featured
+===0.72d1===
+_(unreleased 18Jun11)_
+  * Added Swedish translation
+
 ===0.71d3 (released - 16Jun11)===
   * Fixed Polish translation keys, tested polish locale
   * Released 0.71d3 as development/test build.
