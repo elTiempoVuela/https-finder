@@ -1,6 +1,6 @@
 #labels Featured
 ===0.72d2===
-_(unreleased 18Jun11)_
+_(unreleased 22Jun11)_
   * Auto dismiss alerts to not get dismissed in background tabs. If you have an 'x' second timeout, the 'x' seconds starts once you switch to the given tab (So loading tabs in the back will still enforce, and whenever you switch you still get 'x' seconds of notification, then auto dismiss).
 
 ===0.72d1===
