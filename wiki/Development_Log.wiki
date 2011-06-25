@@ -1,8 +1,10 @@
 #labels Featured
-===0.72d2===
+===0.72d3===
 _(unreleased 22Jun11)_
   * Fixed bug where register http observer function was called twice.
   * Other minor improvements/tweaks
+  * Working on fairly major rework of the Advanced tab. Adding ability to see session results and create rules there. It will be possible to not have any alerts/forwarding, and just check HTTPS Finder every 'once in a while' and create rules for any good HTTPS sites.  [http://i.imgur.com/ePf7c.jpg Preview]
+
 
 ===0.72d2===
 _(unreleased 22Jun11)_
