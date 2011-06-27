@@ -1,5 +1,9 @@
 #labels Featured
 ===0.72d3===
+_(unreleased 26Jun11)_
+  * Added JavaScript module for sharing the session results between preferences.js and browserOverlay.js (for showing detection results in preferences window).
+
+===0.72d3===
 _(unreleased 24Jun11)_
   * Fixed bug where register http observer function was called twice.
   * Other minor improvements/tweaks
