@@ -1,4 +1,9 @@
 #labels Featured
+===0.72d4===
+_(unreleased 28Jun11)_
+  * Added Spanish translation (thank you strel!)
+  * Partial implementation of whitlist/goodSSL list in JavaScript module. Preferences window displays the values. Need to fix listbox formatting and remove the old browserOverlay.js whitelist/goodSSL lists since it's now moved to the shared .jsm.
+
 ===0.72d3===
 _(unreleased 26Jun11)_
   * Added JavaScript module for sharing the session results between preferences.js and browserOverlay.js (for showing detection results in preferences window).
