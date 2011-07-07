@@ -1,5 +1,10 @@
 #labels Featured
 ===0.72d4===
+_(unreleased 06Jul11)_
+  * Moved all session results over to the shared JSM (out of browserOverlay.js). There was a delay on this because I wanted to make sure there was no risk of privacy leak from web content accessing the shared module. This has been confirmed as safe, so I'm continuing work on it.
+  * All functions except "create rule" are working within the preferences menu (see here: http://i.imgur.com/ePf7c.jpg). Just need to move the rule creation method into the JSM. 
+
+===0.72d4===
 _(unreleased 28Jun11)_
   * Added Spanish translation (thank you strel!)
   * Partial implementation of whitlist/goodSSL list in JavaScript module. Preferences window displays the values. Need to fix listbox formatting and remove the old browserOverlay.js whitelist/goodSSL lists since it's now moved to the shared .jsm.
