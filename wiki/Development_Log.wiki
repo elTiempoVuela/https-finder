@@ -1,4 +1,16 @@
 #labels Featured
+===0.72d5===
+_(unreleased 16Jul11)_
+  * Debug logging moved to the native console (using dump()). Errors are now the only thing that get logged to the Error Console.
+  * Starting moving rule writing method to JSM. It's fairly dependent on other code though, so it will take a some more work to have it fully working.
+  * Simplified getStringArrayOfLoadFlags() and testCertificate() - removed unnecessary code. Now checking for only what we care about, rather than all possible flags.  Cert status "secure" is set to false unless it clears "Ci.nsIX509Cert.VERIFIED_OK". It doesn't matter exactly what the cert error is for us.
+
+To do before next release:
+  # Finish moving rule writing method into JSM so it works from the Preference window
+  # Implement private browsing mode/history listener (So we're not introducing privacy leaks while caching session detection results)
+  # Use E4X for XML processing to avoid markup errors (issue identified by Mozilla before gaining full approval)
+
+
 ===0.72d4===
 _(unreleased 15Jul11)_
   * Added "No HTTPS Found alert" preference (when auto-enforce HTTPS is disabled). This allows completely silent operation with no alerts or redirects, but HTTPS is still detected and results are remembered during the session. 
