@@ -4,6 +4,7 @@ _(unreleased 16Jul11)_
   * Debug logging moved to the native console (using dump()). Errors are now the only thing that get logged to the Error Console.
   * Starting moving rule writing method to JSM. It's fairly dependent on other code though, so it will take a some more work to have it fully working.
   * Simplified getStringArrayOfLoadFlags() and testCertificate() - removed unnecessary code. Now checking for only what we care about, rather than all possible flags.  Cert status "secure" is set to false unless it clears "Ci.nsIX509Cert.VERIFIED_OK". It doesn't matter exactly what the cert error is for us.
+  * Added button to view Qualys SSL Labs report for a detected hostname. See [http://i.imgur.com/kdDV1.png here.]
 
 To do before next release:
   # Finish moving rule writing method into JSM so it works from the Preference window
