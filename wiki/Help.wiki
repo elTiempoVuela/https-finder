@@ -1,4 +1,4 @@
-= HTTPS Finder Help=
+= HTTPS Finder Help (written for v0.51)=
 
 ==Topics:==
 
