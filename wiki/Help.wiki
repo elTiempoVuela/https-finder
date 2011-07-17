@@ -20,7 +20,7 @@ In HTTPS Finder there are three main preferences:
 
   * "Do not prompt to save HTTPS rule" acts just as it says.  You will not be prompted to create any HTTPS Everywhere rules.  However, the rules will not be created automatically.  This should only be checked if you have a specific reason why you're not using HTTPS Everywhere.
 
-  * "Automatically forward to HTTPS if available" will automatically redirect you to the secure page when HTTPS Finder detects it.  It is important to realize that depending on the website, services offered over HTTPS may be different than those offered over HTTPS (For example, Google over HTTPS disables image search).  You can enable automatic forwarding and simply whitelist those domains that you do not wish to use HTTPS on in the future.
+  * "Automatically forward to HTTPS if available" will automatically redirect you to the secure page when HTTPS Finder detects it.  It is important to realize that depending on the website, services offered over HTTPS may be different than those offered over HTTP (For example, Google over HTTPS disables image search).  You can enable automatic forwarding and simply whitelist those domains that you do not wish to use HTTPS on in the future.
 
 Version 0.50 adds an Advanced tab with the following options:
 
