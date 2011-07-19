@@ -1,5 +1,9 @@
 #labels Featured
 ===0.72d5===
+_(unreleased 18Jul11)_
+  * Moved rule writing logic out of browserOverlay.js into hfShared.js. Everything seems to work. Just need to code the function for preferences.js that takes the result list entry and passes it to the rule writing method (in hfShared.js).
+
+===0.72d5===
 _(unreleased 16Jul11)_
   * Debug logging moved to the native console (using dump()). Errors are now the only thing that get logged to the Error Console.
   * Starting moving rule writing method to JSM. It's fairly dependent on other code though, so it will take a some more work to have it fully working.
