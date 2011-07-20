@@ -1,4 +1,7 @@
 #labels Featured
+===0.73d1 (released - 19Jun11)===
+  * Lots of good changes. See notes and download here: http://code.google.com/p/https-finder/downloads/detail?name=httpsfinder073d1.xpi&can=2&q=
+
 ===0.72d5===
 _(unreleased 18Jul11)_
   * Moved rule writing logic out of browserOverlay.js into hfShared.js. Everything seems to work. Just need to code the function for preferences.js that takes the result list entry and passes it to the rule writing method (in hfShared.js).
