@@ -1,5 +1,5 @@
 #labels Featured
-===0.73d1 (released - 19Jun11)===
+===0.73d1 (released - 19Jul11)===
   * Lots of good changes. See notes and download here: http://code.google.com/p/https-finder/downloads/detail?name=httpsfinder073d1.xpi&can=2&q=
 
 ===0.72d5===
