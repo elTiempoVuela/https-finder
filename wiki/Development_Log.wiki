@@ -1,5 +1,9 @@
 #labels Featured
 ===0.73d2===
+_(unreleased 8Aug11)_
+  * E4X implementation at 80%. 
+
+===0.73d2===
 _(unreleased 25Jul11)_
   * Fixed broken/buggy/over-thought method for auto-dismissing alerts from background tabs (with a much simpler approach). Fixed bug where closing a tab could cause the alert to not be dismissed. 
 
