@@ -1,7 +1,7 @@
 #labels Featured
 ===0.73d3===
 _(unreleased 10Aug11)_
-  * E4X implementation. Fixed a couple very minor bugs.
+  * E4X implementation complete. Fixed a couple very minor bugs.
   * To do before next release:
     # Code history listener/private browsing modes to avoid privacy leaks with saved detection results 
  
