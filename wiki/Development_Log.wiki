@@ -1,7 +1,7 @@
 #labels Featured
 ===0.73d3===
 _(unreleased 11Aug11)_
-  * Now compliant with private browsing mode. Session detection results are not saved.
+  * Detection results are no longer cached if private browsing mode is enabled
   * Added green "check" image for good HTTPS in Preferences > Advanced
 
 ===0.73d3===
