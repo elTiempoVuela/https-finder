@@ -1,9 +1,14 @@
 #labels Featured
 ===0.73d3===
+_(unreleased 11Aug11)_
+  * Now compliant with private browsing mode. Session detection results are not saved.
+  * Added green "check" image for good HTTPS in Preferences > Advanced
+
+===0.73d3===
 _(unreleased 10Aug11)_
   * E4X implementation complete. Fixed a couple very minor bugs.
   * To do before next release:
-    # Code history listener/private browsing modes to avoid privacy leaks with saved detection results 
+    1.  Code history listener/private browsing modes to avoid privacy leaks with saved detection results 
  
 ===0.73d2===
 _(unreleased 8Aug11)_
