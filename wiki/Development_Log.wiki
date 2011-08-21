@@ -1,4 +1,10 @@
 #labels Featured
+===0.74RC1 (released - 21Aug11)===
+  * Compatibility: Firefox 4-9.0a1
+  * Now using E4X for XML processing
+  * Now Private browsing mode compliant. Also, history listener is implemented (removing page from history removes it from HTTPS Finder results list).
+  * Added Portuguese and Finnish locales
+
 ===0.73d3===
 _(unreleased 11Aug11)_
   * Detection results are no longer cached if private browsing mode is enabled
