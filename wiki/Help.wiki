@@ -52,6 +52,8 @@ http://kevinajacobs.com/hfwiki/prefsadvanced.JPG
 
 ===Whitelisting===
 
+http://www.kevinajacobs.com/hfwiki/whitelist.JPG
+
 Whitelisting allows you to specify domains that you want HTTPS Finder to ignore (i.e., not attempt HTTPS detection or enforcement).  You can Add, Remove, or Modify whitelist rules in the Preferences window.  
 
 Whitelist rules are matched by hostname.  For example, to whitelist Google search, you could add the rule "www.google.com".  Note that with this rule only, HTTPS Finder will still detect on "google.com".  Some websites forward "theirdomain.com" to "www.theirdomain.com", but if you want to be sure you're whitelisting a host, you can add both "www.google.com" and "google.com".  
