@@ -31,7 +31,7 @@ Under General Preferences there are four main settings:
 
   * "Do not prompt to save HTTPS rule" does just what it says.  You will not be prompted to create any HTTPS Everywhere rules.  However, the rules will not be created automatically.  This should only be checked if you have a specific reason why you're not using HTTPS Everywhere.
 
-  * "Enable HTTPS Found alerts (if auto-enforce HTTPS is disabled" is only available if “Automatically enforce HTTPS when available is off. Unchecking both of these boxes will result in no drop down alerts of any kind. However, detection will still happen in the background. You can still periodically check found domains and create rules from within the Advanced tab.
+  * "Enable HTTPS Found alerts (if auto-enforce HTTPS is disabled) is only available if “Automatically enforce HTTPS when available is off. Unchecking both of these boxes will result in no drop down alerts of any kind. However, detection will still happen in the background. You can still periodically check found domains and create rules from within the Advanced tab.
 
   * "Automatically forward to HTTPS if available" will automatically redirect you to the secure page when HTTPS Finder detects it.  It is important to realize that depending on the website, services offered over HTTPS may be different than those offered over HTTP (For example, a site may redirect to a special login page as soon as an HTTPS connection is established).  It is recommended to leave this feature enabled, and simply whitelist any domains that you want HTTPS Finder to ignore in the future.
 
@@ -54,7 +54,7 @@ http://kevinajacobs.com/hfwiki/prefsadvanced.JPG
 
 Whitelisting allows you to specify domains that you want HTTPS Finder to ignore (i.e., not attempt HTTPS detection or enforcement).  You can Add, Remove, or Modify whitelist rules in the Preferences window.  
 
-Whitelist rules are matched by hostname.  For example, to whitelist Google search, you could add the rule "www.google.com".  Note that with this rule only, HTTPS Finder will still detect on "google.com".  Some websites forward "theirdomain.com" to "www.theirdomain.com", but if you want to be sure you're whitlisting a host, you can add both "www.google.com" and "google.com".  
+Whitelist rules are matched by hostname.  For example, to whitelist Google search, you could add the rule "www.google.com".  Note that with this rule only, HTTPS Finder will still detect on "google.com".  Some websites forward "theirdomain.com" to "www.theirdomain.com", but if you want to be sure you're whitelisting a host, you can add both "www.google.com" and "google.com".  
 
 HTTPS Finder also allows wildcard subdomains.  For example, if you whitelist "{{{*}}}.google.com", all Google subdomains will be whitelisted (Mail.google.com, Code.google.com, Www.google.com, etc).  Note that google.com is not covered in this rule, because it's not a subdomain.  
 
