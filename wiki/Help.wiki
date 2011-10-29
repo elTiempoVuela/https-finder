@@ -8,9 +8,11 @@
 
     Detection Types
 
-    Writing rules
+    Writing Rules
 
     Troubleshooting
+
+    Hidden Settings
 
 
 ===Accessing the Preferences===
@@ -119,3 +121,12 @@ Verify that the website that you're trying to access does not have an invalid SS
 
 
 _If you're still having trouble, email httpsfinder@gmail.com for support_
+
+
+===Hidden Settings===
+
+To access these preferences, navigate to "about:config". 
+
+  * "extensions.httpsfinder.appendVersionTagToRules" will control whether or not the HTTPS Finder version tag comments are appended to saved rules. These are used for troubleshooting, but if you submit rules to the HTTPS Everywhere project, it may be easier for you with this setting disabled. (Introduced in 0.78)
+
+  * "extensions.httpsfinder.allowSelfSignedCerts". If set to true, a special alert will appear on sites that offer a self-signed certificate. It is recommended to only use this if you know what the dangers of a self-signed certificate are, as well as why you want to use a self signed certificate in the first place. Note that auto-enforce HTTPS will not work on self-signed sites. Create an HTTPS Everywhere rule if you wish for this enforcement to take place. (Introduced in 0.79)
